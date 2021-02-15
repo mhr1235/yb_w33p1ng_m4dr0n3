@@ -1,0 +1,24 @@
+body{
+  background-color: #111;
+  font-family: Signika Negative, Asap, sans-serif;
+  color:white;
+  overflow:hidden;
+}
+.dot{
+  width:35px;
+  height:35px;
+  position:absolute;
+/*  background: url(http://www.clipartqueen.com/image-files/red-lobed-fall-clipart-leaf.png);
+*/  background: url(flowers.png);
+    background: url(pngegg.png);
+  background-size: 100% 100%;
+}
+html, body,  {width:100%; height:100%; }
+#logo{ position:left:50%; top:50%;  border-radius:10px; }
+
+
+
+#DiacoDesignLink,#pens{
+  color: #fff;
+}
+

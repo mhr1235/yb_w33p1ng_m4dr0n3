@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="icon" href="favicon-32x32.png">
+
+		<title>w33p1ng_m4dr0n3</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+
+				<link type="text/css" rel="stylesheet" href="main.css"> 
+				<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+       <link rel="stylesheet" href="style2.css">
+
+		<style>
+			body {
+				background-color: #bfe3dd;
+				color: #000;
+			}
+
+			a {
+				color: #2983ff;
+			}
+		</style>
+	</head>
+
+
+	<body>
+		<div>
+<!-- <button onclick="buttonClick()">Update Death Rate</button>
+<input type="text" id="inc" value="0"></input> -->
+<!-- <img id='logo' src="madrone.png"> -->
+ </div>
+
+       
+	 <div id="fps">
+      			 				<img id='logo' src="2d_tree.png" alt="Smiley face" height="701" width="654">
+
+      </div>
+     
+      
+		<div id="container">
+		</div>
+
+		 <div id="container3">
+
+		 </div> 
+
+		
+
+
+
+		
+
+
+		<div id="root"></div> 
+
+		<div id="date_title"></div>
+
+		<div id="date_reported"></div>
+
+
+		<div id="deaths"></div>
+
+		<div id="deaths_number"></div>
+
+		<div id="state_title"></div>
+
+		<div id="state_reported"></div>
+
+		<div id="source_title"></div>
+
+		<div id="source_image"></div>
+
+		<!-- <div id="update_title"></div>
+
+		<div id="update_time"></div> -->
+
+
+
+
+
+
+		
+
+
+	<!-- <script src="scripts.js"></script> -->
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+<script  src="script5.js"></script>
+
+
+
+
+		<!-- <script type="module"> -->
+
+
+
+			<!-- import * as THREE from '../build/three.module.js';
+
+			import Stats from './jsm/libs/stats.module.js';
+
+			import { OrbitControls } from './jsm/controls/OrbitControls.js';
+			import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+			import { DRACOLoader } from './jsm/loaders/DRACOLoader.js';
+
+			let mixer;
+
+			var SPEED = 0.01;
+
+
+			const clock = new THREE.Clock();
+			const container3 = document.getElementById( 'container3' );
+
+
+			const stats = new Stats();
+			container3.appendChild( stats.dom );
+
+
+
+
+			const renderer = new THREE.WebGLRenderer( { antialias: true } );
+			renderer.setPixelRatio( window.devicePixelRatio );
+			renderer.setSize( window.innerWidth, window.innerHeight );
+			renderer.outputEncoding = THREE.sRGBEncoding;
+			container3.appendChild( renderer.domElement );
+
+
+			const scene = new THREE.Scene();
+			scene.background = new THREE.Color( 0xbfe3dd );
+
+			const camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 100 );
+			camera.position.set( 0, 0, 6 );
+			camera.lookAt(scene.position);
+
+
+			const controls = new OrbitControls( camera, renderer.domElement );
+			controls.target.set( 0, 0, 0 );
+			controls.update();
+			controls.autoRotate = true;
+			controls.autoRotateSpeed = 0.4;
+			controls.enablePan = false;
+			controls.enableDamping = true;
+
+			scene.add( new THREE.HemisphereLight( 0xffffff, 0x000000, 0.4 ) );
+
+			const dirLight = new THREE.DirectionalLight( 0xffffff, 1 );
+			dirLight.position.set( 5, 2, 8 );
+			scene.add( dirLight );
+
+			// envmap
+			const path = 'textures/cube/Park2/';
+			const format = '.jpg';
+			const envMap = new THREE.CubeTextureLoader().load( [
+				path + 'posx' + format, path + 'negx' + format,
+				path + 'posy' + format, path + 'negy' + format,
+				path + 'posz' + format, path + 'negz' + format
+			] );
+
+			const dracoLoader = new DRACOLoader();
+			dracoLoader.setDecoderPath( 'js/libs/draco/gltf/' );
+
+			const loader = new GLTFLoader();
+			loader.setDRACOLoader( dracoLoader );
+			//loader.load( 'models/gltf/madrona_invasives/scene.gltf', function ( gltf ) {
+			loader.load( 'models/gltf/new_tree/tree_base4.glb', function ( gltf ) {
+
+
+				const model = gltf.scene;
+				model.position.set( 0, -1.3, 0 );
+				//model.rotation.set(0.6,-0.9,0);
+
+				
+
+				model.scale.set( 0.067, 0.067, 0.067 );
+				model.traverse( function ( child ) {
+
+					if ( child.isMesh ) child.material.envMap = envMap;
+
+				} );
+
+				scene.add( model );
+
+				mixer = new THREE.AnimationMixer( model );
+				//mixer.clipAction( gltf.animations[ 0 ] ).play();
+
+				animate();
+
+			}, undefined, function ( e ) {
+
+				console.error( e );
+
+			} );
+
+
+			window.onresize = function () {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			};
+
+  
+
+
+			function animate() {
+
+				requestAnimationFrame( animate );
+
+                
+
+				const delta = clock.getDelta();
+
+				mixer.update( delta );
+
+				controls.update();
+
+				stats.update();
+
+				renderer.render( scene, camera );
+
+			} -->
+
+
+		<!-- </script>
+ -->
+
+
+	</body>
+
+</html>
