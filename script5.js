@@ -8,8 +8,7 @@ var death_number = 0;
 var data;
 
 
-
-
+window.localStorage.clear();
 
     function buttonClick(){
 
@@ -173,7 +172,9 @@ setInterval(myFunction, 7200000);
 
 function myFunction(){
 
+
            window.location.reload(true);
+
 
 }
 
@@ -224,6 +225,22 @@ setTimeout(function(){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
 
 
 
