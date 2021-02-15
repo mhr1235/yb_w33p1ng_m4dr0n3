@@ -284,7 +284,7 @@ line-height: 60px;      /* The same as your div height */
 
 #fps {
 	position: absolute;
-	top: 15%;
+	top: 10%;
 	
 	left: 25%;
 	box-sizing: border-box;
