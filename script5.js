@@ -167,7 +167,7 @@ if(str.length > 10) str = str.substring(0,10);
 
 request.send();
 
-setInterval(myFunction, 7200000);
+setInterval(myFunction, 5400000);
 
 
 function myFunction(){
