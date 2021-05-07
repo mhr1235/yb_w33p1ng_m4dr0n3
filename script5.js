@@ -1,4 +1,3 @@
-/* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
 var falling = true;
 var number;
 var sum;
@@ -84,29 +83,16 @@ function R(min,max) {return min+Math.random()*(max-min)};
 
      }
 
+//ajax not working since api disabled cors in May 2021
 
-//const app = document.getElementById('root');
 
-/*const logo = document.createElement('img');
-logo.src = 'logo.tif';*/
+/*var request = new XMLHttpRequest();
 
-//const container2 = document.createElement('div');
-//container2.setAttribute('class', 'container2');
-
-//app.appendChild(logo);
-//app.appendChild(container2);
-
-var request = new XMLHttpRequest();
-
-//request.open('GET', 'https://ghibliapi.herokuapp.com/films', true);
-//request.open('GET', 'https://data.sfgov.org/resource/tvq9-ec9w.json', true);
 request.open('GET', 'https://api.covidtracking.com/v1/states/ca/current.json', true);
 request.onload = function () {
 
 
-  // Begin accessing JSON data here
   data = JSON.parse(this.response);
-  //var lastEntry = data[0].case_count;
   death_number = data.deathIncrease;
   document.getElementById("deaths_number").textContent = data.deathIncrease;
   document.getElementById("deaths").textContent = "COVID-19 DEATHS";
@@ -115,7 +101,6 @@ request.onload = function () {
    document.getElementById("state_reported").textContent = data.state;
       document.getElementById("state_title").textContent = "STATE";
             document.getElementById("source_title").textContent = "DATA SOURCE";
-      //document.getElementById("update_title").textContent = "TIME TO UPDATE";
 
 
 var str = data.dateModified;
@@ -123,49 +108,33 @@ if(str.length > 10) str = str.substring(0,10);
 
  document.getElementById("date_reported").textContent = str;
 
-  //console.log(death_number);
-  //console.log(data[1]);
-
-   //document.getElementById('inc').value = death_number;
-
       addBlossom(death_number);
 
   if (request.status >= 200 && request.status < 400) {
 
 
-/*
-    data.forEach(entry => {
-      const card = document.createElement('div');
-      card.setAttribute('class', 'card');
-
-      const h1 = document.createElement('h1');
-      //h1.textContent = movie.title;
-      h1.textContent = entry.specimen_collection_date;
-      //h1.textContent = movie.case_disposition;
-
-      const p = document.createElement('p');
-      entry.case_disposition = entry.case_disposition.substring(0, 300);
-      entry.case_count = entry.case_count.substring(0, 300);
-
-      p.textContent = `${entry.case_disposition} ${entry.case_count}...`;
-
-      container2.appendChild(card);
-      card.appendChild(h1);
-      card.appendChild(p);
-    });*/
 
 
   } else {
-    /*const errorMessage = document.createElement('marquee');
-    errorMessage.textContent = `Gah, it's not working!`;
-    app.appendChild(errorMessage);*/
+    
   }
-}
+}*/
 
 
 
 
-request.send();
+// request.send();
+
+  addBlossom(258);
+  document.getElementById("deaths").textContent = "COVID-19 DEATHS";
+  document.getElementById("deaths_number").textContent = 258;
+   document.getElementById("date_title").textContent = "DATE REPORTED";
+    document.getElementById("date_reported").textContent = "2021-03-07";
+
+   document.getElementById("state_reported").textContent = "CA";
+      document.getElementById("state_title").textContent = "STATE";
+        document.getElementById("source_title").textContent = "DATA SOURCE";
+
 
 setInterval(myFunction, 5400000);
 
@@ -179,81 +148,3 @@ function myFunction(){
 }
 
 
-/*if (today >= 7 && today <= 19) {
-
-}*/
-
-
-/*var now = new Date();
-var millisTill10 = new Date(now.getFullYear(), now.getMonth(), now.getDate(), 5, 5, 2, 0) - now;
-if (millisTill10 < 0) {
-     millisTill10 += 86400000; // it's after 10am, try 10am tomorrow.
-}
-setTimeout(function(){
-
-  //alert("It's 10am!")
-  window.location.reload();
-
-}, millisTill10);*/
-
-
-
-
-
-
-//setInterval(myFunction, 3000);
-
-//function myFunction() {
-   //request.open('GET', 'https://data.sfgov.org/resource/tvq9-ec9w.json', true);
-
-   //request.send();
-
-    //death_number = 12;
-
-    //death_number = data[1].case_count;
-    //document.getElementById('inc').value = death_number;
-  //window.location.reload();
-
-
-
-    //document.getElementById('inc').value = death_number;
-
-     //addBlossom(death_number);
-//}
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* a Pen by Diaco m.lotfollahi  : https://diacodesign.com */
